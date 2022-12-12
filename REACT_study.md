@@ -41,6 +41,7 @@ const onClick = () =>{
 
 ```
 npx create-react-app 프로젝트명
+npm i prop-types
 
 npm start
 
