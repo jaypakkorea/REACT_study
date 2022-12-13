@@ -48,6 +48,10 @@ npm start
 npm install
 
 npm install react-router-dom
+
+//기본 배포
+npm i gh-pages
+npm run build
 ```
 
 
