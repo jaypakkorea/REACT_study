@@ -1,28 +1,20 @@
-import { useEffect, useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import Detail from "./routes/Detail";
+import Home from "./routes/Home"
+
 
 function App() {
-  const [loading, setLoading] = useState(true); 
-  const [coins, setCoins] = useState([])
-  useEffect(() => {
-    fetch("https://api.coinpaprika.com/v1/tickers")
-    .then((response) => response.json())
-    .then((json) => {
-      setCoins(json)
-      setLoading(false)
-  })
-  }, [])
-  return (
-    <div>
-      <h1> The Coins! {loading ? "" : `${coins.length}`}</h1>
-      {loading ? <strong>Loading...</strong> : 
-      <select>
-        {coins.map((coin, id ) => (<option key={id}>
-          {coin.name} ({coin.symbol}) : {coin.quotes.USD.price * 1200} KRW 
-          </option>))}
-      </select>
-      }
-    </div>
-  )
+  return <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/movie" element={<Detail />} />
+      </Routes>
+    </Router>
 }
 
 export default App;
