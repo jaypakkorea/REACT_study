@@ -70,3 +70,27 @@ function changeName(){
     }
 ```
 
+
+
+
+
+# Google Firebase vs AWS amplify
+
+Auth
+
+Storate
+
+Data Storage
+
+Hosting
+
+...
+
+### Firebase
+
+Test 용도로 빠르게 서버를 만들고, 데이터를 만들기 좋음
+
+실질 비지니스에서는 추천하지 않음
+
+
+
