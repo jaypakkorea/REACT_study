@@ -52,6 +52,11 @@ npm install react-router-dom
 //기본 배포
 npm i gh-pages
 npm run build
+
+
+//redux
+npm install redux@4.1.2 react-redux
+
 ```
 
 
